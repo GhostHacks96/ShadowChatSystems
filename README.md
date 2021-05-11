@@ -34,7 +34,7 @@ Starting the Server (Windows):
 
   java -jar ShadowChat-Server.jar
 
-  echo "Client Stopped this window will stay open incase of an error you need to report. Press any key to close the window."
+  echo "Server Stopped this window will stay open incase of an error you need to report. Press any key to close the window."
   pause
 ````
 
