@@ -70,6 +70,7 @@ public class Server_GUI extends JFrame {
 
 		textArea_1 = new JTextArea();
 		textArea_1.setBounds(20, 35, 394, 149);
+		textArea_1.setEditable(false);
 		layeredPane_1.add(textArea_1);
 
 		jLabel1 = new JLabel("Messages");
@@ -79,6 +80,16 @@ public class Server_GUI extends JFrame {
 		textField = new JTextField();
 		textField.setBounds(19, 196, 296, 20);
 		layeredPane_1.add(textField);
+		textField.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Main.sendToAll("Server: " + textField.getText());
+				textArea_1.append("\nServer: " + textField.getText());
+				textField.setText("");
+			}
+			
+		});
 		textField.setColumns(10);
 
 		JButton btnNewButton = new JButton("Send");

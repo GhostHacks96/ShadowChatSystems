@@ -62,6 +62,26 @@ public class Client_GUI extends JFrame {
 		
 		textField = new JTextField();
 		textField.setBounds(10, 220, 305, 20);
+		textField.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String str = textField.getText();
+		        
+		        if(str.trim().equals(""))
+		        {
+		        
+		        }
+		        else
+		        {
+		            try {
+		            Client.OUT.writeUTF(Main.crypt.encrypt(str.trim()));
+		            } catch (IOException ex) {
+		            
+		            }
+		        }
+		        
+		        textField.setText("");
+			}
+		});
 		layeredPane.add(textField);
 		textField.setColumns(10);
 		
