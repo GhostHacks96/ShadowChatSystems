@@ -2,7 +2,7 @@
 
 ======
 This is a Java based 256 bit encrypted chat application. This system can be downloaded from the website below(must register to get login and download the files.
-Shadow Chat Systems: http://www.ghosthacks96.tk/projects/shadowchat/
+Shadow Chat Systems: http://www.ghosthacks96.com/projects/shadowchat/
 
 ### Set up/Starting methods
 
